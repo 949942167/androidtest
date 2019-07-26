@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="20dp"
+    android:background="@mipmap/bg"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_http"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入ip"
+            android:layout_weight="2"
+            android:text="@string/myhttp" />
+        <EditText
+            android:id="@+id/et_ip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入ip"
+            android:layout_weight="3"
+            android:text="@string/myip" />
+        <EditText
+            android:id="@+id/et_port"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="输入端口"
+            android:layout_weight="2"
+            android:text="@string/myport" />
+        <EditText
+            android:id="@+id/et_html"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入path"
+            android:layout_weight="10"
+            android:text="@string/mypath" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed"
+        android:text="保存到下方列表并跳转"
+        android:background="@drawable/btn_color"
+        />
+    <!-- ListView 由item.xml里的TextView给值 。-->
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button"
+        />
+
+</RelativeLayout>

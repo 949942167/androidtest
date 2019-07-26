@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">TestBulletin-----仅用于研发自测</string>
+    <string name="myip">10.235.185.244</string>
+    <string name="myport">8080</string>
+    <string name="mypath">tv-webpage/pages/test/test.html</string>
+    <string name="myhttp">http</string>
+
+</resources>
