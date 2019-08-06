@@ -6,6 +6,7 @@
 package com.xiaomi.TestBulletin;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Item implements Serializable {
 	public Item() {
@@ -18,6 +19,20 @@ public class Item implements Serializable {
 
 	public String getTime() {
 		return time;
+	}
+
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof Item)) return false;
+		Item item = (Item) o;
+		return Objects.equals(getUrl(), item.getUrl());
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(getUrl());
 	}
 
 	public void setTime(String time) {
@@ -35,4 +50,6 @@ public class Item implements Serializable {
 	}
 
 	private String url;
+
+
 }

@@ -76,6 +76,7 @@ public class ListLRU {
                     "http://h5.tv.pandora.xiaomi.com/activity/qiqu2015/index_dev.html",
                     "http://h5.tv.n.duokanbox.com/weekly_recommend/16/index.html",
                     "http://10.235.187.249:8080/TV-webpage/pages/activity/choujiang/5/index.html",
+                    "http://h5.tv.n.duokanbox.com/test/test.html",
             };
 
             SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
